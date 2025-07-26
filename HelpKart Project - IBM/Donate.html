@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - HelpKart</title>
+  <link rel="stylesheet" href="styling.css">
+  <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+</head>
+<style>
+  .donate-hero {
+      background-color: #1f3d9a;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .donate-hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .donate-hero p {
+      font-size: 18px;
+    }
+
+    .kits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 50px auto;
+    }
+
+    .kit-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      text-align: left;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .kit-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transform: scale(1.05);
+      transition: transform .2s ease-in-out;
+    }
+
+    .kit-title {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .kit-price {
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 500;
+      margin-left: 27px;
+    }
+
+    .add-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #f1f1f5;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .add-btn:hover {
+      background-color:#1e293b;
+      color: white;
+    }
+    
+</style>
+<body>
+     <nav>
+        <div class="container ">
+            <div class="logo"><img src="Images/favicon.png" alt="logo" width="40" height="40"><span>HelpKart</span></div>
+            <div>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="Impact.html">Impact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Cart.html"><img src="Images/cart.png" width="20"></a></li>
+                    <li><button><a href="Login-Register.html">Login</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+  <section class="donate-hero">
+    <h1>Support by Donating a Kit</h1>
+    <p>Your small help can make a big difference.</p>
+  </section>
+
+  <div class="kits-grid">
+    <div class="kit-card">
+      <div class="kit-title">👶 Baby Care Kit</div>
+      <div class="kit-price">₹249</div>
+      <button class="add-btn"  onclick="addToCart('Baby Care Kit',249)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">👕 Clothing Kit</div>
+      <div class="kit-price">₹229</div>
+      <button class="add-btn"  onclick="addToCart('Clothing Kit',229)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">🧴 Medical Aid Kit</div>
+      <div class="kit-price">₹299</div>
+      <button class="add-btn" onclick="addToCart('Medica Aid Kit',299)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">💊 Emergency Kit</div>
+      <div class="kit-price">₹179</div>
+      <button class="add-btn" onclick="addToCart('Emergency Kit',179)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">📚 Books Kit</div>
+      <div class="kit-price">₹149</div>
+      <button class="add-btn" onclick="addToCart('Books Kit',149)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">🎨 Snack Kit</div>
+      <div class="kit-price">₹129</div>
+      <button class="add-btn" onclick="addToCart('Snack Kit',129)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">🩸 Sanitary Kit</div>
+      <div class="kit-price">₹159</div>
+      <button class="add-btn" onclick="addToCart('Sanitary Kit',159)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">🛏️ Blanket Kit</div>
+      <div class="kit-price">₹349</div>
+      <button class="add-btn" onclick="addToCart('Blanket Kit',349)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">🧼 Hygiene Kit</div>
+      <div class="kit-price">₹319</div>
+      <button class="add-btn" onclick="addToCart('Hygiene Kit',319)">Add to Cart</button>
+    </div>
+    <div class="kit-card">
+      <div class="kit-title">✏️ Stationery Kit</div>
+      <div class="kit-price">₹100</div>
+      <button class="add-btn" onclick="addToCart('Stationery Kit',100)">Add to Cart</button>
+    </div>
+  </div>
+
+
+     <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>HelpKart</h3>
+      <p>Changing lives through essential donations.</p>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Donate.html">Donate</a></li>
+        <li><a href="Impact.html">Impact</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email: support@helpkart.org</p>
+      <p>Phone: +91 9876543210</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 HelpKart. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

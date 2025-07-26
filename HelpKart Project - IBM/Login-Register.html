@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpKart Login</title>
+  <link rel="stylesheet" href="styling.css">
+  <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-cover bg-center min-h-screen"
+      style="background-image: url('https://cdn4.vectorstock.com/i/1000x1000/89/53/charity-donation-box-with-hands-and-heart-vector-30548953.jpg');">
+
+  <nav>
+        <div class="container">
+            <div class="logo"><img src="Images/favicon.png" alt="logo" width="40" height="40"><span>HelpKart</span></div>
+            <div>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="Impact.html">Impact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Cart.html"><img src="Images/cart.png" width="20"></a></li>
+                    <li><button><a href="Login-Register.html">Login</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Form Container -->
+  <div class="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-lg p-10 w-full max-w-2xl flex flex-col items-center justify-center mt-40  mx-auto">
+
+    <!-- Logo -->
+    <div class="text-center mb-6">
+      <h1 class="text-4xl font-bold text-indigo-700 flex justify-center items-center gap-3">
+        <i class="fa-solid fa-circle-dollar-to-slot"></i> HelpKart
+      </h1>
+    </div>
+
+    <!-- Welcome Text -->
+    <h2 id="form-title" class="text-center text-2xl font-semibold mb-8">Welcome Back</h2>
+
+    <!-- Login Form -->
+    <form id="login-form" class="space-y-6 mb-8">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" required placeholder="you@example.com"
+                 class="pl-10 w-full px-4 py-3 border rounded-md focus:ring-2 focus:ring-indigo-500" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Password</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+          <input type="password" required placeholder="********"
+                 class="pl-10 w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500" />
+        </div>
+      </div>
+
+      <button type="submit"
+              class="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 text-lg font-medium">
+        Log In
+      </button>
+
+      <p class="text-center text-sm text-gray-600 mt-6">
+        Don’t have an account?
+        <a href="#" onclick="toggleForm('register')" class="text-indigo-600 font-medium hover:underline">Register</a>
+      </p>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register-form" class="space-y-6 mb-8 hidden">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+            <i class="fa-solid fa-user"></i>
+          </span>
+          <input type="text" required placeholder="John Doe"
+                 class="pl-10 w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email Address</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" required placeholder="you@example.com"
+                 class="pl-10 w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Password</label>
+        <div class="relative">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+          <input type="password" required placeholder="********"
+                 class="pl-10 w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500" />
+        </div>
+      </div>
+
+      <button type="submit"
+              class="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 text-lg font-medium">
+        Register
+      </button>
+
+      <p class="text-center text-sm text-gray-600 mt-6">
+        Already have an account?
+        <a href="#" onclick="toggleForm('login')" class="text-indigo-600 font-medium hover:underline">Log in</a>
+      </p>
+    </form>
+
+  </div>
+
+  <!-- JS Script for Form Toggling -->
+  <script>
+    function toggleForm(formType) {
+      const loginForm = document.getElementById('login-form');
+      const registerForm = document.getElementById('register-form');
+      const formTitle = document.getElementById('form-title');
+
+      if (formType === 'login') {
+        loginForm.classList.remove('hidden');
+        registerForm.classList.add('hidden');
+        formTitle.textContent = 'Welcome Back';
+      } else {
+        loginForm.classList.add('hidden');
+        registerForm.classList.remove('hidden');
+        formTitle.textContent = 'Create an Account';
+      }
+    }
+  </script>
+
+</body>
+</html>
