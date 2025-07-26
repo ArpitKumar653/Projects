@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpKart</title>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styling.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container ">
+            <div class="logo"><img src="Images/favicon.png" alt="logo" width="40" height="40"><span>HelpKart</span></div>
+            <div>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="Impact.html">Impact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li><button><a href="Login-Register.html">Login</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="section-1">
+            <div class="titles">
+                <h1>Donate Essentials.</h1>
+                <h1>Change Lives.</h1>
+            </div>
+            <div class="start-button">
+                <button><a href="Donate.html">Start Donating</a></button>
+            </div>
+        </div>
+
+        <div class="section-2">
+            <div>
+                <h1 style="text-align: center;">Popular Donation Kits</h1>
+            </div>
+            <div class="items">
+                <div class="item align">
+                <img src="Images/Hygiene.png" width="100" alt="Hygiene">
+                <h2>Hygiene Kit</h2>
+                <h1>₹319</h1>
+                <button onclick="addToCart('Hygiene Kit',319)">Add to Cart</button>    
+                </div>
+                <div class="item align">
+                <img src="Images/food.png" width="100" alt="food">
+                <h2>Food Kit</h2>
+                <h1>₹299</h1> 
+                <button onclick="addToCart('Hygiene Kit',299)">Add to Cart</button>     
+                </div>
+                <div class="item align">
+                <img src="Images/stationery.png" width="100" alt="stationery">
+                <h2>Stationery Kit</h2>
+                <h1>₹100</h1>  
+                <button  onclick="addToCart('Hygiene Kit',100)">Add to Cart</button>    
+                </div>
+                <div class="item">
+                <img src="Images/clothing.png" width="100" alt="stationery">
+                <h2>Clothing Kit</h2>
+                <h1>₹229</h1>  
+                <button onclick="addToCart('Hygiene Kit',199)">Add to Cart</button>    
+                </div>
+                <div class="item">
+                <img src="Images/blanket.png" width="100" alt="stationery">
+                <h2>blanket Kit</h2>
+                <h1>₹349</h1>  
+                <button onclick="addToCart('Blanket Kit',349)">Add to Cart</button>    
+                </div>
+               
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>HelpKart</h3>
+      <p>Changing lives through essential donations.</p>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Donate.html">Donate</a></li>
+        <li><a href="Impact.html">Impact</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email: support@helpkart.org</p>
+      <p>Phone: +91 9876543210</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 HelpKart. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

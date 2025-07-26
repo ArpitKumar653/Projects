@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - HelpKart</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <style>
+        .hero {
+      background-color: #1f3d9a;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #1f3d9a;
+    }
+
+    .section p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .timeline {
+      border-left: 4px solid #1f3d9a;
+      padding-left: 20px;
+      margin-top: 30px;
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 5px;
+      font-size: 1.2rem;
+      color: #222;
+    }
+
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .member {
+      background-color: #f1f1f1;
+      padding: 20px;
+      width: 220px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .member:hover{
+         transform: scale(1.02);
+            transition: transform .2s ease-in;
+             box-shadow: 0 0 5px 0 gray;
+    }
+    .member h4 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    .member p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .cta {
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .cta h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background-color: #1f3d9a;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .cta a:hover {
+      background-color: #142a6c;
+       transform: scale(1.05);
+            transition: transform .1s linear;
+             box-shadow: 0 0 10px 0 gray;
+    }
+
+    @media (max-width: 600px) {
+      .team {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .member {
+        width: 90%;
+      }
+    }
+    </style>
+</head>
+<body>
+     <nav>
+        <div class="container ">
+            <div class="logo"><img src="Images/favicon.png" alt="logo" width="40" height="40"><span>HelpKart</span></div>
+            <div>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Donate.html">Donate</a></li>
+                    <li><a href="Impact.html">Impact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                    <li><button><a href="Login-Register.html">Login</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+    <h1>About HelpKart</h1>
+    <p>We are on a mission to bridge the gap between those who want to help and those in need—through smart, impactful donations.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Mission</h2>
+    <p>HelpKart aims to provide essential donation kits to underprivileged communities across India, ensuring timely relief and lasting impact. Our platform makes it easy and transparent for anyone to contribute to meaningful causes.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision a future where no one goes without hygiene, food, education, or warmth—because everyone deserves dignity, health, and opportunity.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Founded HelpKart</h3>
+        <span>January 2023</span>
+        <p>Started with a small team of passionate students and social workers.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Reached First 1,000 Donations</h3>
+        <span>June 2023</span>
+        <p>Successfully delivered food and hygiene kits to 20+ villages.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Partnered with NGOs</h3>
+        <span>November 2023</span>
+        <p>Collaborated with 15+ organizations for wider outreach.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="member">
+        <h4>Aakash Bansal</h4>
+        <p>Backend Developer</p>
+      </div>
+      <div class="member">
+        <h4>Arpit Kumar</h4>
+        <p>UI Designer & Frontend Developer</p>
+      </div>
+      <div class="member">
+        <h4>Ankit Rana</h4>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="member">
+        <h4>Bhavya Nayyar</h4>
+        <p>Frontend Developer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Ready to Make an Impact?</h2>
+    <a href="donate.html">Start Donating Now</a>
+  </div>
+
+   <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>HelpKart</h3>
+      <p>Changing lives through essential donations.</p>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Donate.html">Donate</a></li>
+        <li><a href="Impact.html">Impact</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email: support@helpkart.org</p>
+      <p>Phone: +91 9876543210</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 HelpKart. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+  </div>
+</footer>
+</body>
+</html>
